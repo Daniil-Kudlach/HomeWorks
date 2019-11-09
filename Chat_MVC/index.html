@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="user-form">
+            <div class="form-section">
+                <input type="text" name="name" class="add_name" autocomplete="off" required data-toggle="tooltip"
+                    title="Нажмите на имя">
+                <label for="name" class="label-name">
+                    <span class="content-name"></span>
+                </label>
+            </div>
+        </div>
+        <div class="tool-box"> <button class="add_name_btn" data-toggle="tooltip"
+                title="Нажмите на имя чтоб изменить его">Сохранить имя</button>
+            <label for="color"><small>Цвет текста: </small><input type="color" name="color" class="add_color"></label>
+        </div>
+        <div class="info"></div>
+        <div class="textarea-container">
+            <textarea class="post_text" placeholder="Your message..."></textarea>
+            <button class="post_btn"></button>
+        </div>
+    </div>
+
+</body>
+<script src="app/main.js" type="module"></script>
+
+</html>
