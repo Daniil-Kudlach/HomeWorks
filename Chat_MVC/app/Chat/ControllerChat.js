@@ -53,7 +53,7 @@ export class ControllerChat {
         if (!name) {
             return;
         } else {
-            this.view.setName(this.model.setName(this.view.getName()));
+            this.view.setName(this.model.setName(name));
             return;
         };
     }
