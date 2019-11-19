@@ -21,7 +21,7 @@ export class ControllerChat {
     }
 
     sentMessage() {
-        let msg = this.view.postMessage();
+        let msg = this.view.getMessage();
         if (!msg) {
             return;
         } else {
