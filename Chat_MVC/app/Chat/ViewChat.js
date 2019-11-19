@@ -22,16 +22,14 @@ export class ViewChat {
             time = document.createElement('div'),
             name = document.createElement('div'),
             txt = document.createElement('div');
-        txt.textContent = `${text}`;
-        name.textContent = `${names}:`;
-        time.textContent = `${times}`;
+        txt.textContent = text;
+        name.textContent = names;
+        time.textContent = times;
         div.classList.add('msg');
         txt.classList.add('msg-txtBox');
         name.classList.add('msg-nameBox');
         time.classList.add('msg-timeBox');
-        div.append(name);
-        div.append(txt);
-        div.append(time);
+        div.append(name, txt, time);
         txt.style.color = color;
         this.msgBox.append(div);
         this.msgBox.scrollTop = this.msgBox.scrollHeight;
@@ -58,7 +56,7 @@ export class ViewChat {
         return this.addColor.value;
     }
 
-    postMessage() {
+    getMessage() {
         return this.postText.value;
     }
 
