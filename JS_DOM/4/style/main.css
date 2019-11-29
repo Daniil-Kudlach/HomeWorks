@@ -1,0 +1,58 @@
+@import url('../../style/nav.css');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 55%;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+.newsBlock {
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 25px 1px black;
+}
+
+.newsText {
+    text-align: justify;
+}
+
+.date::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+    background-image: url('../img/clock-regular.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.authorAndDate {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .authorAndDate {
+        flex-direction: column;
+    }
+}

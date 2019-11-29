@@ -1,0 +1,58 @@
+@import url('../../style/nav.css');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.percentCounter {
+    text-align: center;
+}
+
+.trackbar-container {
+    width: 300px;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 0 13px 3px grey;
+    position: relative;
+    background-color: #FBF2E9;
+}
+
+.track-button {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: calc(50% - 10px);
+    border: 2px solid rgb(9, 86, 153);
+    box-shadow: 0 0 5px .1px rgb(9, 86, 153);
+    z-index: 1;
+    border-radius: 50%;
+    top: calc(50% - 8px);
+    background-color: #2699FF;
+}
+
+.track-container {
+    width: 90%;
+    height: 16px;
+    position: absolute;
+    border-radius: 10px;
+    left: 5%;
+    top: calc(50% - 8px);
+    box-shadow: inset 0 0 5px 2px gray;
+    background: linear-gradient(to right, rgb(134, 176, 212), rgb(185, 182, 182) 0%);
+}
+
+.track-line {
+    width: calc(100% - 16px);
+    height: 16px;
+    position: relative;
+    border-radius: 10px;
+    top: calc(50% - 8px);
+}

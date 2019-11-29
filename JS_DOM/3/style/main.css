@@ -1,0 +1,53 @@
+@import url('../../style/nav.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 2px solid #345A79;
+    border-top: 1px solid #345A79;
+    border-bottom: 1px solid #345A79;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blockHeader,
+.blockText {
+    padding: 5px 10px;
+    text-align: justify;
+}
+
+.blockHeader {
+    color: white;
+    font-weight: bold;
+    border-top: 1px solid #345A79;
+    border-bottom: 1px solid #345A79;
+    background-color: #518CBB;
+    user-select: none;
+    cursor: pointer;
+}
+
+.blockText {
+    background-color: #B5DCE9;
+    color: #345A79;
+    font-size: smaller;
+    display: none;
+}
+
+.visible {
+    display: block;
+}

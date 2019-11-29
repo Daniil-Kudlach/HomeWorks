@@ -1,0 +1,136 @@
+@import url('../../style/nav.css');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-filter: blur(2px);
+}
+
+.container {
+    width: 95%;
+    height: 95%;
+    transform-origin: center;
+    overflow: hidden;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.paralaxOff{
+    transition-duration: .5s;
+}
+
+.btnRight,
+.btnLeft {
+    z-index: 3;
+    width: 50px;
+    height: 100%;
+    filter: invert(100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.btnRight:hover,
+.btnLeft:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.unactiveBtn {
+    filter: invert(50%);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btnLeft {
+    left: 1%;
+    background-image: url('../img/chevron-left-solid.svg');
+}
+
+.btnRight {
+    right: 1%;
+    background-image: url('../img/chevron-right-solid.svg');
+}
+
+.preloader{
+    display: none;
+}
+
+.load {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+.load div {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 2s ease infinite
+}
+
+.load :first-child {
+    background: #19A68C;
+    animation-delay: -1.5s
+}
+
+.load :nth-child(2) {
+    background: #F63D3A;
+    animation-delay: -1s
+}
+
+.load :nth-child(3) {
+    background: #FDA543;
+    animation-delay: -0.5s
+}
+
+.load :last-child {
+    background: #193B48
+}
+
+@keyframes spin {
+
+    0%,
+    100% {
+        transform: translate(0)
+    }
+
+    25% {
+        transform: translate(160%)
+    }
+
+    50% {
+        transform: translate(160%, 160%)
+    }
+
+    75% {
+        transform: translate(0, 160%)
+    }
+}
