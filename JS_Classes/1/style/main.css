@@ -1,0 +1,41 @@
+@import url('../../style/nav.css');
+
+main{
+    margin-top: 8vh;
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+.info{
+    width: 100%;
+    height: 90%;
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+}
+
+.input-block{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+.input-block input{
+    width:90%;
+
+}
+
+.input-block button{
+    width: 10%;
+}

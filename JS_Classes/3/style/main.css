@@ -1,0 +1,23 @@
+@import url('../../style/nav.css');
+
+main {
+    width: 100vw;
+    height: 92vh;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 60%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container span{
+    margin-bottom: 10px;
+}

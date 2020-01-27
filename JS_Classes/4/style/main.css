@@ -1,0 +1,14 @@
+@import url('../../style/nav.css');
+main{
+    width: 100vw;
+    height: 92vh;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+}
+
+section{
+    width: 80%;
+
+}
