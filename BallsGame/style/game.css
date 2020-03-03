@@ -1,0 +1,79 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.game {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    background-color: wheat;
+    cursor: crosshair;
+}
+
+.game div {
+    border-radius: 50%;
+    /* border: 1px solid gray; */
+    box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.score {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 50px);
+    font-size: 100px;
+    color: gray;
+}
+
+#strtBtn {
+    position: absolute;
+    width: 100px;
+    padding: 10px;
+    left: calc(50% - 50px);
+    top: calc(50% - 25px);
+    cursor: crosshair;
+}
+
+.inviz {
+    display: none;
+}
+
+.gameOver {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    color: red;
+    font-size: 100px;
+    text-align: center;
+}
+
+small {
+    color: yellow;
+}
+
+.anim {
+    animation-name: bubbleAnim;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+}
+
+@keyframes bubbleAnim {
+    0% {
+        transform: scale(1.1);
+        opacity: .9;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
